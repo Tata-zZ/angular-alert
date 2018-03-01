@@ -1,0 +1,14 @@
+<div class="dialog">
+	<div class="dialog-bg"></div>
+	<div class="dialog-body animated fadeInDown">
+		<div class="dialog-part1">
+			<div class="title" ng-repeat="t in title">{{t}}</div>
+		</div>
+		<div class="dialog-part2"></div>
+		<div class="dialog-part3">
+			<button class="btn btn-no" ng-if="btn_num==2" ng-click="no()">{{btn_no_text}}</button>
+			<button class="btn btn-yes" ng-if="btn_num==2" ng-click="yes()">{{btn_yes_text}}</button>
+			<button class="btn btn-back" ng-if="btn_num==1" ng-click="back()">{{btn_back_text}}</button>
+		</div>
+	</div>
+</div>

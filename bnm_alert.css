@@ -1,0 +1,136 @@
+.dialog-bg {
+  z-index: 10000 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-color: #171717;
+}
+.dialog-body {
+  z-index: 99999 !important;
+  position: fixed;
+  width: 80%;
+  padding: 5%;
+  background-color: #fff;
+  left: 5%;
+  top: 15%;
+  border-radius: 10px;
+  line-height: 1.2em;
+}
+.dialog-body .text-center {
+  text-align: center;
+  line-height: 1.8em;
+}
+.dialog-part1 {
+  margin: 10% auto;
+  text-align: center;
+}
+.dialog-part1 .title {
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
+.dialog-part2 {
+  margin-top: 5%;
+  margin-bottom: 13%;
+}
+.dialog-part2 .text {
+  margin: 5% auto;
+  text-align: center;
+}
+.dialog-part2 .amount {
+  width: 90%;
+  padding: 4% 5%;
+  border-style: none;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.dialog-part3 {
+  width: 100%;
+  margin: 5% auto;
+}
+.dialog-part3 .btn {
+  background-color: #02ac87;
+  border-color: #02ac87;
+  color: white;
+  font-size: 1.0625em;
+  border: none;
+  border-radius: 20px;
+  height: 2.5em;
+  width: 43%;
+  line-height: 2.5em;
+}
+.dialog-part3 .btn-no {
+  margin-left: 2%;
+  margin-right: 3%;
+}
+.dialog-part3 .btn-yes {
+  margin-left: 3%;
+  margin-right: 2%;
+}
+.dialog-part3 .btn-back {
+  width: 70%;
+  margin: 0 15%;
+}
+.dialog .fadeInDown.animated {
+  animation-duration: 0.6s;
+}
+.dialog .table-box {
+  overflow: auto;
+  min-height: 50px;
+  max-height: 200px;
+}
+.dialog .table-list {
+  width: 90%;
+  margin: 5%;
+  margin-top: 0;
+  border-collapse: collapse;
+}
+.dialog .table-list tr:first-child td {
+  border-top: none;
+}
+.dialog .table-list td {
+  padding: 5%;
+  padding-right: 0;
+  border: 1px solid #171717;
+  border-width: 50%;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.dialog .table-list .td-w-40 {
+  width: 40%;
+}
+.dialog .table-list .td-w-60 {
+  padding-left: 13%;
+  width: 60%;
+}
+.dialog .table-list .unchecked {
+  color: #02ac87;
+}
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
+/*# sourceMappingURL=bnm_alert.css.map */
