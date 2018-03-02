@@ -5,7 +5,7 @@
 --- |---|---|---|---|---
 title   | Array | 否 | 标题 | ["this is title1","this is title2"]
 message | Array | 否 | 内容 | ["this is message1","this is message2"]
-type    | String | 是 | 类型 | "input" | "text"
+type    | String | 否 | 类型 | "input" | "text"
 btn_num | Number | 否 | 按钮个数 | 2 | 2
 html    | String | 否 | 自定义html(当type为html时) | "\<div>Hello World\</div>"
 placeholder | String | 否 | input占位符(当type为input时) | "this is placeholder"
