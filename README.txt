@@ -5,8 +5,8 @@ angular-lert V1.1
 		type	[String]	: 类型('empty'|'text'|'input'|'table'| 'html')
 		btn_num	[Number]	: 按钮个数
 		html	[String]	: 自定义html(当type为html时)
-		placeholder	  [String]	: input占位符(当type为input时)
-		btn_no_text	  [String]	: btn_no对文文案
+		placeholder   [String]	: input占位符(当type为input时)
+		btn_no_text   [String]	: btn_no对文文案
 		btn_yes_text  [String]	: btn_yes对文文案
 		btn_back_text [String]	: btn_back对文文案
 		scope : $scope
