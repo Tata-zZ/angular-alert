@@ -10,8 +10,8 @@ btn_num | Number | 否 | 按钮个数 | 2 | 2
 html    | String | 否 | 自定义html(当type为html时) | "\<div>Hello World\</div>"
 placeholder | String | 否 | input占位符(当type为input时) | "this is placeholder"
 btn_no_text | String | 否 | btn_no对文文案 | "取消" | "取消"
-btn_yes_text | String | 否 | btn_no对文文案 | "确定" | "确定"
-btn_back_text | String | 否 | btn_no对文文案 | "返回" | "返回"
+btn_yes_text | String | 否 | btn_yes对文文案 | "确定" | "确定"
+btn_back_text | String | 否 | btn_back对文文案 | "返回" | "返回"
 scope | $scope | Object | 是 | $scope
 
 ### Usage
