@@ -1,20 +1,34 @@
-/*
-	angular-lert弹窗module V1.1
+/**
+	angular-lert V1.1
+	@param
+		title	[Array]		: 标题
+		message	[Array]		: 内容
+		type	[String]	: 类型('empty'|'text'|'input'|'table'| 'html')
+		btn_num	[Number]	: 按钮个数
+		html	[String]	: 自定义html(当type为html时)
+		placeholder	  [String]	: input占位符(当type为input时)
+		btn_no_text	  [String]	: btn_no对文文案
+		btn_yes_text  [String]	: btn_yes对文文案
+		btn_back_text [String]	: btn_back对文文案
+		scope : $scope
+	@author Lin
 
-	调用方法：
+	可链式调用，绑定对应按钮的回调事件
+	eg.
 		dialog({
-			title:[''],	//需以数组形式传入
-			message:[''],
-			type:'empty'|'text'|'input'|'table'| 'html',
-			placeholder:'',	//当type为input时
-			html:'',		//当type为html时
-			btn_num: 2 | 3,
+			title:['this is title'],
+			message:['this is message'],
+			type:'html',
+			html:'<div>Hello World</div>',
+			btn_num: 2,
 			scope:$scope
-		}).btn_no().btn_yes().btn_back();
+		}).btn_yes(function(){
+			alert('clicked btn_yes');
+		});
 */
-angular.module("bnmAlert", []).factory('dialog', ['$timeout', '$http', '$compile', '$templateCache', '$rootScope',
+angular.module("angularAlert", []).factory('dialog', ['$timeout', '$http', '$compile', '$templateCache', '$rootScope',
 	function($timeout, $http, $compile, $templateCache, $rootScope) {
-		var NOTIFY_BASE = 'views/common/bnm_alert.html',
+		var NOTIFY_BASE = './angular-alert.html',
 			BG_COLOR = '@bnmBlack',
 			DIALOG_CLASS = 'dialog-body',
 			PATR1_CLASS = 'dialog-body-part1',
@@ -126,6 +140,7 @@ angular.module("bnmAlert", []).factory('dialog', ['$timeout', '$http', '$compile
 			dismiss();
 		}
 
+		//按钮回调事件
 		function btnMethod(myscope,that){
 			that.btn_no = function(fn) {
 				var f = fn;
@@ -153,7 +168,7 @@ angular.module("bnmAlert", []).factory('dialog', ['$timeout', '$http', '$compile
 			};
 		}
 
-		var test = function(message) {
+		var Dialog = function(message) {
 			console.log(message.scope);
 			//在rootscope下创建scope
 			var myscope = initScope(message.scope);
@@ -168,9 +183,9 @@ angular.module("bnmAlert", []).factory('dialog', ['$timeout', '$http', '$compile
 			//绑定三种按钮方法
 			btnMethod(myscope,this);
 		}
-		var Test = function(message) {
-			return new test(message);
+		var newDialog = function(message) {
+			return new Dialog(message);
 		};
-		return Test;
+		return newDialog;
 	}
 ])
