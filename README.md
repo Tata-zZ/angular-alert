@@ -33,6 +33,6 @@ function test ( $scope, dialog ) {
 ### Require
 ```js
 angular.module('inspinia', [
-    'angularAlert'						//bnmAlert
+    'angularAlert'	//angularAlert
 ]);
 ```
